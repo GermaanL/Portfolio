@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-2">
         <div class="container">
             <a class="navbar-brand" href="#">Mi Portafolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -28,15 +28,15 @@
         </div>
     </nav>
 
-    <main class="p-4">
+    <main class="p-2">
 
         <!-- Sección de presentación -->
-        <section id="inicio" class="section text-center py-5">
+        <section id="inicio" class="section text-center py-4">
             <div class="container">
-                <h1 class="mb-4 fw-bold">Mi Portafolio</h1>
-                <img src="src/img/foto-perfil.jpg" alt="Mi Foto" class="rounded-circle img-fluid" width="200">
+                <h2 class="mb-4 fw-bold">Sobre mi</h2>
+                <img src="src/img/foto-perfil.jpg" alt="Mi Foto" class="rounded-circle img-fluid" width="200" style="object-fit: cover; height: 200px;">
                 <p class="mt-3">
-                    Estudiante de Ingeniería en Sistemas de Información. Estoy en busca de una
+                    Soy un estudiante de Ingeniería en Sistemas de Información. Estoy en busca de una
                     experiencia laboral en el área de Sistemas que me permita aplicar los
                     conocimientos adquiridos en mis estudios, así como poder seguir
                     potenciando mis habilidades y desarrollar aún más mi aprendizaje.
@@ -44,8 +44,8 @@
                     mucha predisposición al aprendizaje.
                 </p>
         
-                <h3 class="mt-4 fw-bold">Lenguajes y Conocimientos</h3>
-                <h4 class="mt-4">Lenguajes de Programación</h4>
+                <h3 class="mt-4">Lenguajes y Conocimientos</h3>
+                <p class="mt-4 h5">Lenguajes de Programación</p>
                 <ul class="list-inline">
                     <li class="list-inline-item badge bg-primary p-2 mb-1">C</li>
                     <li class="list-inline-item badge bg-secondary p-2 mb-1">Java</li>
@@ -53,7 +53,7 @@
                     <li class="list-inline-item badge bg-success p-2 mb-1">Python</li>
                     <li class="list-inline-item badge bg-info text-dark p-2 mb-1">PHP</li>
                 </ul>
-                <h4 class="mt-4">Tecnologias</h4>
+                <p class="mt-4 h5">Tecnologias</p>
                 <ul class="list-inline">
                     <li class="list-inline-item badge border border-primary text-primary bg-transparent p-2 mb-1">HTML</li>
                     <li class="list-inline-item badge border border-secondary text-secondary bg-transparent p-2 mb-1">CSS</li>
@@ -68,8 +68,8 @@
                 </ul>
                 
 
-                <h4 class="mt-4">Otros</h4>
-                <p class="mt-2"><strong>Idiomas:</strong> Inglés nivel B2</p>
+                <p class="mt-4 h5">Otros</p>
+                <p class="mt-2">Inglés nivel B2</p>
 
             </div>
         </section>
@@ -77,7 +77,7 @@
         
 
         <!-- Sección de proyectos -->
-        <section id="proyectos" class="py-5">
+        <section id="proyectos" class="py-4">
             <div class="container">
                 <h2 class="text-center mb-4 fw-bold">Mis Proyectos</h2>
                 <h3 class="text-center">Trabajos realizados en la <span class="text-primary">UTN FRBA</span></h3>
@@ -346,8 +346,8 @@
             </div>
         </section>
 
-        <section id="certificados" class="py-5 container text-center">
-            <h2 class="mb-4">Mis Certificados</h2>
+        <section id="certificados" class="py-4 container text-center">
+            <h2 class="mb-4 fw-bold">Mis Certificados</h2>
             <div class="row justify-content-center g-4">
         
                 <!-- Certificado 1 -->
@@ -355,7 +355,7 @@
                     <div class="card certificate-card h-100 mx-auto">
                         <embed src="src/pdf/CertificadoInfra.pdf" type="application/pdf" class="card-img-top mx-auto" style="height: 250px; width: 90%; border-radius: 5px;">
                         <div class="card-body">
-                            <h5 class="card-title">Infraestructura Tecnológica</h5>
+                            <p class="card-title h5">Infraestructura Tecnológica</p>
                             <a href="src/pdf/CertificadoInfra.pdf" class="btn btn-custom mb-2" target="_blank">Ver PDF</a>
                         </div>
                     </div>
@@ -366,7 +366,7 @@
                     <div class="card certificate-card h-100 mx-auto">
                         <embed src="src/pdf/CertificadoDesarrolloWeb.pdf" type="application/pdf" class="card-img-top mx-auto" style="height: 250px; width: 90%; border-radius: 5px;">
                         <div class="card-body">
-                            <h5 class="card-title">Desarrollo Web Completo con HTML5, CSS3, JS AJAX, PHP y MySQL</h5>
+                            <p class="card-title h5">Desarrollo Web Completo con HTML5, CSS3, JS AJAX, PHP y MySQL</p>
                             <a href="src/pdf/CertificadoDesarrolloWeb.pdf" class="btn btn-custom mb-2" target="_blank">Ver PDF</a>
                         </div>
                     </div>
@@ -378,7 +378,7 @@
         </section>
         
 
-        <section id="experiencia-laboral" class="py-5">
+        <section id="experiencia-laboral" class="py-4">
             <div class="container border rounded p-4">
                 
                 <h2 class="text-center pb-4 mb-4 fw-bold border-bottom border-2 ">Experiencia Laboral</h2>
@@ -409,9 +409,9 @@
             </div>
         </section>
 
-        <section id="contacto" class="section py-5">
+        <section id="contacto" class="section py-4">
             <div class="container text-center">
-                <h2 class="mb-4">Contacto</h2>
+                <h2 class="mb-4 fw-bold">Contacto</h2>
                 <div class="row justify-content-center gx-4"> 
                     <div class="col-12 col-md-3 mb-3"> 
                         <div class="d-flex flex-column align-items-center">
@@ -456,7 +456,7 @@
     </main>
     <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Mi Portafolio</p>
+        <p class="m-0">&copy; German Lechner 2025</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
