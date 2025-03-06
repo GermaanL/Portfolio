@@ -1,0 +1,108 @@
+/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.university_span {
+    font-weight: bolder;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.section {
+    padding:  3rem 0;
+    text-align: center;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 3rem;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+}
+
+/* Estilos de los proyectos */
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.lista_formas {
+    max-width: 18rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.forma {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+        gap: 0rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.accordion-collapse {
+    transition: height 0.4s ease-out;
+    overflow: hidden;
+    height: 0;
+}
+
+.accordion-collapse.show {
+    height: auto;
+    transition: height 0.4s ease-out;
+}

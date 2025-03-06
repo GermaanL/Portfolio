@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="icon" type="image/png" href="src/img/logoCV.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificados">Certificados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia-laboral">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="p-4">
+
+        <!-- Sección de presentación -->
+        <section id="inicio" class="section text-center py-5">
+            <div class="container">
+                <h1 class="mb-4 fw-bold">Mi Portafolio</h1>
+                <img src="src/img/foto-perfil.jpg" alt="Mi Foto" class="rounded-circle img-fluid" width="200">
+                <p class="mt-3">
+                    Estudiante de Ingeniería en Sistemas de Información. Estoy en busca de una
+                    experiencia laboral en el área de Sistemas que me permita aplicar los
+                    conocimientos adquiridos en mis estudios, así como poder seguir
+                    potenciando mis habilidades y desarrollar aún más mi aprendizaje.
+                    Me considero una persona resolutiva, analítica, detallista, proactiva, y con
+                    mucha predisposición al aprendizaje.
+                </p>
+        
+                <h3 class="mt-4 fw-bold">Lenguajes y Conocimientos</h3>
+                <h4 class="mt-4">Lenguajes de Programación</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item badge bg-primary p-2 mb-1">C</li>
+                    <li class="list-inline-item badge bg-secondary p-2 mb-1">Java</li>
+                    <li class="list-inline-item badge bg-danger p-2 mb-1">JavaScript</li>
+                    <li class="list-inline-item badge bg-success p-2 mb-1">Python</li>
+                    <li class="list-inline-item badge bg-info text-dark p-2 mb-1">PHP</li>
+                </ul>
+                <h4 class="mt-4">Tecnologias</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item badge border border-primary text-primary bg-transparent p-2 mb-1">HTML</li>
+                    <li class="list-inline-item badge border border-secondary text-secondary bg-transparent p-2 mb-1">CSS</li>
+                    <li class="list-inline-item badge border border-danger text-danger bg-transparent p-2 mb-1">SASS</li>
+                    <li class="list-inline-item badge border border-warning text-warning bg-transparent p-2 mb-1">Hibernate</li>
+                    <li class="list-inline-item badge border border-success text-success bg-transparent p-2 mb-1">Docker</li>
+                    <li class="list-inline-item badge border border-info text-info bg-transparent p-2 mb-1">Jenkins</li>
+                    <li class="list-inline-item badge border border-primary text-primary bg-transparent p-2 mb-1">Ansible</li>
+                    <li class="list-inline-item badge border border-secondary text-secondary bg-transparent p-2 mb-1">Linux</li>
+                    <li class="list-inline-item badge border border-danger text-danger bg-transparent p-2 mb-1">MySQL</li>
+                    <li class="list-inline-item badge border border-warning text-warning bg-transparent p-2 mb-1">Bootstrap</li>
+                </ul>
+                
+
+                <h4 class="mt-4">Otros</h4>
+                <p class="mt-2"><strong>Idiomas:</strong> Inglés nivel B2</p>
+
+            </div>
+        </section>
+        
+        
+
+        <!-- Sección de proyectos -->
+        <section id="proyectos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4 fw-bold">Mis Proyectos</h2>
+                <h3 class="text-center">Trabajos realizados en la <span class="text-primary">UTN FRBA</span></h3>
+
+                <div class="accordion mt-4" id="accordionProyectos">
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyecto1">
+                                Paradigmas de Programación
+                            </button>
+                        </h2>
+                        <div id="proyecto1" class="accordion-collapse collapse" data-bs-parent="#accordionProyectos">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled mt-3">
+                                    <li class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-2">
+                                        <span>Durante la materia se estudiaron tres paradigmas distintos: 
+                                            Paradigma Funcional con <span class="fw-bold">Haskell</span>, 
+                                            Paradigma Lógico con <span class="fw-bold">SwiProlog</span> 
+                                            y Paradigma de Objetos con <span class="fw-bold">Wollok</span>.
+                                        </span>
+                                        <a href="https://github.com/GermaanL/PdeP" target="_blank">
+                                            <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                        </a>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-2">
+                                        <p>Trabajo Práctico del Paradigma de Objetos - <span class="fw-bold">Wollok</span></p>
+                                        <a href="https://github.com/GermaanL/TPObjetos" target="_blank">
+                                            <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                        </a>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-2">
+                                        <p>Trabajo Práctico del Paradigma Lógico - <span class="fw-bold">Swi-Prolog</span></p>
+                                        <a href="https://github.com/GermaanL/TPLogico" target="_blank">
+                                            <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                        </a>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <p>Trabajo Práctico del Paradigma Funcional - <span class="fw-bold">Haskell</span></p>
+                                        <a href="https://github.com/GermaanL/TPFuncional" target="_blank">
+                                            <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyecto2">
+                                Sintaxis y Semántica de los Lenguajes
+                            </button>
+                        </h2>
+                        <div id="proyecto2" class="accordion-collapse collapse" data-bs-parent="#accordionProyectos">
+                            <div class="accordion-body d-flex justify-content-between align-items-center">
+                                <p>Trabajos Practicos - <span class="fw-bold">C</span></p>
+                                <a href="https://github.com/GermaanL/SSL" target="_blank">
+                                    <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyecto3">
+                                Sistemas Operativos
+                            </button>
+                        </h2>
+                        <div id="proyecto3" class="accordion-collapse collapse" data-bs-parent="#accordionProyectos">
+                            <div class="accordion-body">
+                                <div class=" d-flex justify-content-between align-items-center border-bottom">
+                                    <p>Trabajo Practico - <span class="fw-bold">C</span></p>
+                                    <a href="https://github.com/GermaanL/TP-SO-2c2024" target="_blank">
+                                        <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                    </a>
+                                </div>
+                                <p>
+                                    En este trabajo se tuvo que realizar un software para simular el comportamiento de los distintos componentes de una computadora, y el Sistema Operativo para administrar los recursos. Son 4 modulos CPU, MEMORIA, FILESYSTEM y KERNEL que se comunican mediante sockets, cumpliendo un protocolo de comunicación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyecto4">
+                                Diseño de Sistemas
+                            </button>
+                        </h2>
+                        <div id="proyecto4" class="accordion-collapse collapse" data-bs-parent="#accordionProyectos">
+                            <div class="accordion-body">
+                                <div class="d-flex justify-content-between align-items-center border-bottom">
+                                    <p>Trabajo Práctico - 
+                                        <span class="fw-bold">Java</span> - 
+                                        <span class="fw-bold">HTML</span> - 
+                                        <span class="fw-bold">CSS</span> - 
+                                        <span class="fw-bold">Bootstrap</span> - 
+                                        <span class="fw-bold">MySQL</span> - 
+                                        <span class="fw-bold">Javalin</span> - 
+                                        <span class="fw-bold">Hibernate</span>
+                                    </p>
+                                    <a href="https://github.com/GermaanL/TPDDS" target="_blank">
+                                        <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                    </a>
+                                </div>
+                                <p>
+                                    En este trabajo se tuvo que realizar una desarrollo web de manera grupal (un equipo de 3) para una ONG, siguiendo los requerimientos indicados por la cátedra a lo largo del año. Se utilizó 
+                                    <span class="fw-bold">JAVA</span> 
+                                    como lenguaje de programación del Backend con 
+                                    <span class="fw-bold">Javalin</span> 
+                                    como framework, 
+                                    <span class="fw-bold">Hibernate</span> 
+                                    como ORM y 
+                                    <span class="fw-bold">MySQL</span> 
+                                    como sistema de gestión de bases de datos; 
+                                    <span class="fw-bold">HTML</span>, 
+                                    <span class="fw-bold">CSS</span>, 
+                                    <span class="fw-bold">Bootstrap</span>, y 
+                                    <span class="fw-bold">JavaScript</span> 
+                                    para el Frontend. Se utilizaron distintas tecnologías e integraciones para los requerimientos como 
+                                    <span class="fw-bold">Datadog</span> 
+                                    para monitoreo de recursos, 
+                                    <span class="fw-bold">SpotBugs</span> 
+                                    para analisis de vulnerabilidad de código estático y brokers con 
+                                    <span class="fw-bold">HiveMQ</span> 
+                                    para comunicacion entre componentes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+
+                <h3 class="text-center mt-4">Trabajos realizados en la <span class="text-primary">FIUBA</span></h3>
+                <div class="accordion mt-4" id="accordionProyectosFiuba">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyectofiuba1">
+                                Algoritmos y Programación 1
+                            </button>
+                        </h2>
+                        <div id="proyectofiuba1" class="accordion-collapse collapse" data-bs-parent="#accordionProyectosFiuba">
+                            <div class="accordion-body d-flex justify-content-between align-items-center">
+                                <p>Ejercicios y Trabajos Practicos - <span class="fw-bold">C</span></p>
+                                <a href="https://github.com/GermaanL/AyP1" target="_blank">
+                                    <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-center mt-4">Trabajos realizados en curso de desarrollo web de <span class="text-primary">Udemy</span></h3>
+                <div class="accordion mt-4" id="accordionProyectosUdemy">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyectoUdemy">
+                                Uptask
+                            </button>
+                        </h2>
+                        <div id="proyectoUdemy" class="accordion-collapse collapse" data-bs-parent="#accordionProyectosUdemy">
+                            <div class="accordion-body d-flex justify-content-between align-items-center">
+                                <p>Página para administración de tareas y proyectos 
+                                            - <span class="fw-bold">JavaScript</span>
+                                            - <span class="fw-bold">PHP</span>
+                                            - <span class="fw-bold">SASS</span>
+                                </p>
+                                <a href="https://github.com/GermaanL/UpTask" target="_blank">
+                                    <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyectoUdemy2">
+                                AppSalon
+                            </button>
+                        </h2>
+                        <div id="proyectoUdemy2" class="accordion-collapse collapse" data-bs-parent="#accordionProyectosUdemy">
+                            <div class="accordion-body d-flex justify-content-between align-items-center">
+                                <p>Proyecto de control de turnos para una peluquería 
+                                            - <span class="fw-bold">JavaScript</span>
+                                            - <span class="fw-bold">PHP</span>
+                                            - <span class="fw-bold">SASS</span>
+                                </p>
+                                <a href="https://github.com/GermaanL/APPSALON" target="_blank">
+                                    <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyectoUdemy3">
+                                BienesRaices
+                            </button>
+                        </h2>
+                        <div id="proyectoUdemy3" class="accordion-collapse collapse" data-bs-parent="#accordionProyectosUdemy">
+                            <div class="accordion-body d-flex justify-content-between align-items-center">
+                                <p>Página de venta de Bienes Raices sin funcionalidad de pagos
+                                      <span class="fw-bold">PHP</span>
+                                    - <span class="fw-bold">MySQL</span>
+                                    - <span class="fw-bold">JavaScript</span>
+                                    - <span class="fw-bold">SASS</span>
+                                </p>
+                                <a href="https://github.com/GermaanL/BienesRaices" target="_blank">
+                                    <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyectoUdemy4">
+                                Practica Front
+                            </button>
+                        </h2>
+                        <div id="proyectoUdemy4" class="accordion-collapse collapse" data-bs-parent="#accordionProyectosUdemy">
+                            <div class="accordion-body d-flex justify-content-between align-items-center">
+                                <p>Varias paginas estaticas realizadas para practicar maquetado y estilos.
+                                      <span class="fw-bold">JavaScript</span>
+                                    - <span class="fw-bold">HTML</span>
+                                    - <span class="fw-bold">CSS</span>
+                                </p>
+                                <a href="https://github.com/GermaanL/PracticaFront" target="_blank">
+                                    <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-center mt-4">Otros Proyectos</h3>
+                <div class="accordion accordion-custom mt-4" id="accordionProyectosOtros">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyectoOtro">
+                                Calculadora
+                            </button>
+                        </h2>
+                        <div id="proyectoOtro" class="accordion-collapse collapse" data-bs-parent="#accordionProyectosOtros">
+                            <div class="accordion-body d-flex justify-content-between align-items-center">
+                                <p>Proyecto de práctica 
+                                            - <span class="fw-bold">JavaScript</span>
+                                            - <span class="fw-bold">CSS</span>
+                                </p>
+                                <div>
+                                    <a href="https://github.com/GermaanL/Calculadora" target="_blank" class="text-decoration-none text-reset">
+                                        <img src="src/img/github-logo.png" alt="GitHub" width="50">
+                                    </a>
+                                    <a href="https://germaanl.github.io/Calculadora/" target="_blank">
+                                        <img src="src/img/pagina-logo.png" alt="PageLogo" width="40">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certificados" class="py-5 container text-center">
+            <h2 class="mb-4">Mis Certificados</h2>
+            <div class="row justify-content-center g-4">
+        
+                <!-- Certificado 1 -->
+                <div class="col-md-6">
+                    <div class="card certificate-card h-100 mx-auto">
+                        <embed src="src/pdf/CertificadoInfra.pdf" type="application/pdf" class="card-img-top mx-auto" style="height: 250px; width: 90%; border-radius: 5px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Infraestructura Tecnológica</h5>
+                            <a href="src/pdf/CertificadoInfra.pdf" class="btn btn-custom mb-2" target="_blank">Ver PDF</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificado 2 -->
+                <div class="col-md-6">
+                    <div class="card certificate-card h-100 mx-auto">
+                        <embed src="src/pdf/CertificadoDesarrolloWeb.pdf" type="application/pdf" class="card-img-top mx-auto" style="height: 250px; width: 90%; border-radius: 5px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo Web Completo con HTML5, CSS3, JS AJAX, PHP y MySQL</h5>
+                            <a href="src/pdf/CertificadoDesarrolloWeb.pdf" class="btn btn-custom mb-2" target="_blank">Ver PDF</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Puedes agregar más certificados repitiendo el bloque anterior -->
+        
+            </div>
+        </section>
+        
+
+        <section id="experiencia-laboral" class="py-5">
+            <div class="container border rounded p-4">
+                
+                <h2 class="text-center pb-4 mb-4 fw-bold border-bottom border-2 ">Experiencia Laboral</h2>
+                
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h3>Outlier</h3>
+                        <p class="text-muted">2024 - Actualidad</p>
+                        <p>Lenguajes Utilizados: <span class="fw-bold">Python</span> - <span class="fw-bold">C</span></p>
+                        <ul>
+                            <li>
+                                <p class="">Creación de prompts y corrección de sus respuestas para
+                                    entrenamiento de IA segun especificaciones de clientes de manera
+                                    independiente.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Corrección de tareas ya realizadas para la mejora de calidad del
+                                    producto final entregado al cliente.
+                                </p>
+                            </li>
+                        </ul>
+                        
+                        
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto" class="section py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Contacto</h2>
+                <div class="row justify-content-center gx-4"> 
+                    <div class="col-12 col-md-3 mb-3"> 
+                        <div class="d-flex flex-column align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail mb-2" width="120" height="120" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                <path d="M3 7l9 6l9 -6" />
+                            </svg>
+                            <p>germanlechner@gmail.com</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-3 mb-3"> 
+                        <div class="d-flex flex-column align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin mb-2" width="120" height="120" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                <path d="M8 11l0 5" />
+                                <path d="M8 8l0 .01" />
+                                <path d="M12 16l0 -5" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg>
+                            <a href="https://www.linkedin.com/in/german-agustin-lechner-068b75224/" class="text-decoration-none text-reset fw-normal">Mi Linkedin</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-3 mb-3"> 
+                        <div class="d-flex flex-column align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone mb-2" width="120" height="120" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            </svg>
+                            <p>11-3579-7453</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+    </main>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Mi Portafolio</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    
+            document.querySelectorAll('a.nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId.startsWith("#")) {  // Asegúrate de que sea un ancla
+                        e.preventDefault();
+                        const target = document.querySelector(targetId);
+                        if (target) {
+                            const targetPosition = target.offsetTop - navbarHeight;
+    
+                            // Forzar scroll suave
+                            $('html, body').animate({
+                                scrollTop: targetPosition
+                            }, 500);  // Ajusta la duración (500 ms) a tu gusto
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
